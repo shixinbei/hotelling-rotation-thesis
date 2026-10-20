@@ -1,6 +1,6 @@
 # Hotelling's T²: Classical and Rotation-Based Tests
 
-This repository contains the R code, simulation results, and figures used in my bachelor thesis on the classical one-sample Hotelling \(T^2\) test and a rotation-based alternative.
+This repository contains the R code, simulation results, and figures used in my bachelor thesis on the classical one-sample Hotelling $T^2$ test and a rotation-based alternative.
 
 The simulation study examines finite-sample Type I error, two sensitivity analyses, and empirical power under several multivariate distributions.
 
@@ -44,16 +44,16 @@ hotelling-rotation-thesis/
 
 ## Simulation design
 
-The nominal significance level is \(\alpha=0.05\). The main Type I error study uses \(B=2000\) Monte Carlo repetitions and \(R=2000\) random rotations, with dimensions \(p\in\{2,5,10\}\) and sample sizes \(n\in\{15,50,100,500\}\).
+The nominal significance level is $\alpha=0.05$. The main Type I error study uses $B=2000$ Monte Carlo repetitions and $R=2000$ random rotations, with dimensions $p\in\{2,5,10\}$ and sample sizes $n\in\{15,50,100,500\}$.
 
 The four main scenarios are:
 
-1. **Standard multivariate normal:** \(N_p(0,I_p)\).
-2. **Correlated multivariate normal:** \(N_p(0,\Sigma)\), with Toeplitz covariance \(\Sigma_{jk}=0.5^{|j-k|}\).
-3. **Multivariate \(t\):** 5 degrees of freedom, scaled so that the covariance matrix is \(I_p\).
-4. **Multivariate skew-\(t\):** 5 degrees of freedom with shape vector \((5,0,\ldots,0)^\top\), centered to have population mean zero.
+1. **Standard multivariate normal:** $N_p(0,I_p)$.
+2. **Correlated multivariate normal:** $N_p(0,\Sigma)$, with Toeplitz covariance $\Sigma_{jk}=0.5^{|j-k|}$.
+3. **Multivariate $t$:** 5 degrees of freedom, scaled so that the covariance matrix is $I_p$.
+4. **Multivariate skew-$t$:** 5 degrees of freedom with shape vector $(5,0,\ldots,0)^\top$, centered to have population mean zero.
 
-Three tests are compared in the Type I error study: the classical Hotelling \(T^2\) test using the finite-sample \(F\) critical value, the rotation-based Hotelling \(T^2\) test, and the asymptotic Hotelling \(T^2\) test using the \(\chi_p^2\) critical value.
+Three tests are compared in the Type I error study: the classical Hotelling $T^2$ test using the finite-sample $F$ critical value, the rotation-based Hotelling $T^2$ test, and the asymptotic Hotelling $T^2$ test using the $\chi_p^2$ critical value.
 
 ## Sensitivity analyses
 
@@ -61,19 +61,19 @@ Two additional sensitivity analyses are included.
 
 ### Higher correlation
 
-The Toeplitz correlation parameter in Scenario 2 is increased from \(\rho=0.5\) to \(\rho=0.8\), while the remaining settings are unchanged.
+The Toeplitz correlation parameter in Scenario 2 is increased from $\rho=0.5$ to $\rho=0.8$, while the remaining settings are unchanged.
 
 ### Lognormal distribution
 
-An additional non-normal setting is generated from standardized lognormal variables and transformed to have a Toeplitz covariance structure with \(\rho=0.5\).
+An additional non-normal setting is generated from standardized lognormal variables and transformed to have a Toeplitz covariance structure with $\rho=0.5$.
 
 ## Power study
 
-The power study compares the classical and rotation-based tests under the four main scenarios. The dimension is fixed at \(p=5\), with sample sizes \(n\in\{15,50,100,500\}\) and Mahalanobis effect sizes
+The power study compares the classical and rotation-based tests under the four main scenarios. The dimension is fixed at $p=5$, with sample sizes $n\in\{15,50,100,500\}$ and Mahalanobis effect sizes
 
-\[
+$$
 D\in\{0,0.1,0.2,0.3,0.4,0.5,0.71\}.
-\]
+$$
 
 ## R packages
 

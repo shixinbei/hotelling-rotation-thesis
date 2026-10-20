@@ -1,6 +1,6 @@
 # Hotelling's T²: Classical and Rotation-Based Tests
 
-This repository contains the R code, simulation results, and figures used in my bachelor thesis on the classical one-sample Hotelling $T^2$ test and a rotation-based alternative.
+This repository contains the R code, simulation results, and figures used in my bachelor thesis on the classical one-sample Hotelling's $T^2$ test and a rotation-based alternative.
 
 The simulation study examines finite-sample Type I error, two sensitivity analyses, and empirical power under several multivariate distributions.
 
@@ -51,9 +51,9 @@ The four main scenarios are:
 1. **Standard multivariate normal:** $N_p(0,I_p)$.
 2. **Correlated multivariate normal:** $N_p(0,\Sigma)$, with Toeplitz covariance $\Sigma_{jk}=0.5^{|j-k|}$.
 3. **Multivariate $t$:** 5 degrees of freedom, scaled so that the covariance matrix is $I_p$.
-4. **Multivariate skew-$t$:** 5 degrees of freedom with shape vector $(5,0,\ldots,0)^\top$, centered to have population mean zero.
+4. **Multivariate skew-**$t$**:** 5 degrees of freedom with shape vector $(5,0,\ldots,0)^\top$, centered to have population mean zero.
 
-Three tests are compared in the Type I error study: the classical Hotelling $T^2$ test using the finite-sample $F$ critical value, the rotation-based Hotelling $T^2$ test, and the asymptotic Hotelling $T^2$ test using the $\chi_p^2$ critical value.
+Three tests are compared in the Type I error study: the classical Hotelling's $T^2$ test using the finite-sample $F$ critical value, the rotation-based Hotelling's $T^2$ test, and the asymptotic Hotelling's $T^2$ test using the $\chi_p^2$ critical value.
 
 ## Sensitivity analyses
 

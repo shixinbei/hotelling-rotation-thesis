@@ -1,6 +1,6 @@
 # Hotelling's T²: Classical and Rotation-Based Tests
 
-This repository contains the R code, simulation results, and figures used in my bachelor thesis on the classical one-sample Hotelling's $T^2$ test and a rotation-based alternative.
+This repository contains the R code, simulation results, and figures for my bachelor's thesis comparing the classical and rotation-based one-sample Hotelling's $T^2$ tests.
 
 The simulation study examines finite-sample Type I error, two sensitivity analyses, and empirical power under several multivariate distributions.
 
@@ -44,7 +44,7 @@ hotelling-rotation-thesis/
 
 ## Simulation design
 
-The nominal significance level is $\alpha=0.05$. The main Type I error study uses $B=2000$ Monte Carlo repetitions and $R=2000$ random rotations, with dimensions $p\in\{2,5,10\}$ and sample sizes $n\in\{15,50,100,500\}$.
+The nominal significance level is $\alpha=0.05$. The main Type I error study uses $B=2000$ Monte Carlo repetitions and $R=2000$ random rotations, with dimensions $p\in \lbrace 2,5,10 \rbrace$ and sample sizes $n\in \lbrace 15,50,100,500 \rbrace$.
 
 The four main scenarios are:
 
@@ -69,10 +69,10 @@ An additional non-normal setting is generated from standardized lognormal variab
 
 ## Power study
 
-The power study compares the classical and rotation-based tests under the four main scenarios. The dimension is fixed at $p=5$, with sample sizes $n\in\{15,50,100,500\}$ and Mahalanobis effect sizes
+The power study compares the classical and rotation-based tests under the four main scenarios. The dimension is fixed at $p=5$, with sample sizes $n\in \lbrace 15,50,100,500 \rbrace$ and Mahalanobis effect sizes
 
 $$
-D\in\{0,0.1,0.2,0.3,0.4,0.5,0.71\}.
+D\in \lbrace 0,0.1,0.2,0.3,0.4,0.5,0.71\rbrace.
 $$
 
 ## R packages

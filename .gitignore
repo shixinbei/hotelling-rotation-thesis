@@ -1,0 +1,13 @@
+.DS_Store
+
+# Temporary simulation files
+results/*_checkpoint.rds
+
+# Slurm / worker logs
+results/*_worker_log.txt
+results/*_*.txt
+
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
